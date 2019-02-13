@@ -33,7 +33,7 @@ body{
   background: rgba(245,245,245,1);
   color: #181A1B;
   font-size: 12px;
-  line-height: 1.45;
+  line-height: 1.5;
   text-rendering: optimizeLegiility;
 }
 .webview{
@@ -92,10 +92,10 @@ a:hover {
 .sections{
   order: 2;
   flex-basis: auto;
-  width: calc(100% - 320px);
+  width: calc(100% - 290px);
 }
 .sidebar{
-  width: 280px;
+  width: 250px;
   margin-left: 40px;
   order: 3;
   flex-basis: auto;
