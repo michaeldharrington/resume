@@ -92,10 +92,10 @@ a:hover {
 .sections{
   order: 2;
   flex-basis: auto;
-  width: calc(100% - 290px);
+  width: calc(100% - 320px);
 }
 .sidebar{
-  width: 250px;
+  width: 280px;
   margin-left: 40px;
   order: 3;
   flex-basis: auto;
@@ -113,10 +113,10 @@ a:hover {
 .section__label--border{
   font-family: 'AvenirDemi';
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 9px;
+  letter-spacing: 0.175em;
+  font-size: 10px;
   font-weight: 900;
-  color: rgba(19,77,182,0.8);
+  color: rgba(19,77,182,0.85);
   padding: 8px 0px 6px 0px;
   line-height: 1;
   border-top: 0.5px solid rgba(0,0,0,0.15);
@@ -159,7 +159,12 @@ a:hover {
   margin: 0;
 }
 .role__detail{
-  padding: 3px 0px 3px 0;
+  padding: 4px 0px 4px 0;
+  min-width: 100%;
+}
+
+/*
+.role__detail{
   margin-left: 12px;
   text-indent: -10px;
 }
@@ -168,16 +173,55 @@ a:hover {
   padding-right: 3px;
   color: rgba(34,36,39,0.75);
 }
-.skill {
-  padding: 4px 0px 4px 0px;
+*/
+
+.skill__container{
+  padding: 8px 0px;
 }
-.skill__list--label{
+.skill__label{
+  padding: 0px 0 0;
+}
+.skill__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 3px 0 0;
+}
+.skill{
+  padding: 4px 0 0;
+  width: 48%;
+
+}
+
+/*
+.skill {
+  padding: 3px 0;
+  width: 40%;
+  background: rgba(255,0,0,0.1);
+  text-indent: -10px;
+  margin-left: 12px;
+}
+.skill::before{
+  content: "-";
+  padding-right: 3px;
+  color: rgba(34,36,39,0.75);
+}
+*/
+.skill__label{
+  width: 100%;
   font-family: 'AvenirDemi';
 }
 .bottom{
   align-self: flex-end;
   order: 99;
 
+}
+.portfolio__links>a{
+  display: block;
+  margin: 2px 0 0;
 }
 .portfolio__label{
   padding-top: 12px;
@@ -192,3 +236,6 @@ span.alert {
   background: rgba(249,220,92,0.45);
 }
 */
+.education__detail {
+  padding: 3px 0 0;
+}
